@@ -1929,20 +1929,45 @@ footer {
 	margin-top: 20px;
 	padding-top: 5px;
 }
-footer a{
-	color: rgba(255, 255, 255, 0.7);!important;
-	pointer-events: none;
-	text-decoration: none
-}
-.menu-footer-powered {
-		color: rgba(255, 255, 255, 0.7);!important;
-		pointer-events: none;
-		text-decoration: none
-	}
 
-	.menu-footer-powered:after {
-			display: none;
-		}
+footer .col-md-11 {
+	border-top: 1px solid #E8E8E8;
+}
+
+footer .container {}
+
+footer .ossn-footer-menu {
+	padding-bottom: 10px;
+}
+
+footer .ossn-footer-menu a {
+	color: #807D7D;
+	font-size: 13px;
+}
+
+footer .ossn-footer-menu a::after {
+	content: "|";
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+footer .ossn-footer-menu a:nth-last-child(2)::after,
+footer .ossn-footer-menu a:last-child::after {
+	content: "";
+}
+
+.menu-footer-powered {
+	float: right;
+}
+
+.menu-footer-powered:after {
+	display: none;
+}
+
+.menu-footer-a_copyrights {
+	text-transform: uppercase;
+}
+
 
 /****************************
 Home
