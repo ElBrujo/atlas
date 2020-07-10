@@ -12,5 +12,7 @@ $en = array(
 	'theme:atlas:logo:changed' => 'Logo has been changed.',
 	'theme:atlas:browsercache' => 'In case images does not appear. Please clear your web browser cache to make the images appear',
 //
+	'atlas:latest:members' => 'Latest members',
+	'atlas:latest:friends' => 'Latest friends',
 );
 ossn_register_languages('en', $en);
