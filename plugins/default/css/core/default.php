@@ -1930,12 +1930,17 @@ footer {
 	padding-top: 5px;
 }
 footer a{
-	color: rgba(0, 0, 0, 0.0);!important;
+	color: rgba(255, 255, 255, 0.7);!important;
 	pointer-events: none;
-	text-decoration: none}.menu-footer-powered {
-		color: rgba(0, 0, 0, 0.0);!important;
+	text-decoration: none
+}
+.menu-footer-powered {
+		color: rgba(255, 255, 255, 0.7);!important;
 		pointer-events: none;
-		text-decoration: none}.menu-footer-powered:after {
+		text-decoration: none
+	}
+
+	.menu-footer-powered:after {
 			display: none;
 		}
 
