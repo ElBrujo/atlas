@@ -18,20 +18,19 @@ body {
 	box-shadow: 0px 10px 20px #000;
 	border:2px dashed #222;
 	border-radius:100px;
-	margin-left:102px;
-	margin-right:102px;
-	margin-top:-10px;
-	margin-bottom:15px;
 	height:150px;
 	background:#000000dd url(<?php echo ossn_theme_url(); ?>images/logo_animated.svg)no-repeat;
 	background-size:90px;
 	background-position: center;
 	z-index:1000;
+	width:150px;
 }
 
 .atlas-table {
 	border-spacing: 10px;
-    border-collapse: separate;
+  border-collapse: separate;
+	margin-right: auto;
+	margin-left: auto;
  }
 
 .ossn-required {
@@ -145,11 +144,14 @@ p {
 .btn-primary:active,
 .btn-primary:hover,
 
-.btn-succes.focus,
-.btn-succes.active,
-.btn-succes:focus,
-.btn-succes:active,
-.btn-succes:hover,
+.btn-success.active,
+.btn-success.focus,
+.btn-success:active,
+.btn-success:focus,
+.btn-success:hover,
+.open>
+.dropdown-toggle
+.btn-success,
 
 .open>
 .dropdown-toggle
@@ -172,7 +174,7 @@ p {
 
  {
 	outline:none !important;
-	background: #333;
+	background:rgba(0,0,0,0);
 	border:0px solid #000;
 	color: #c5ff00;
 	text-decoration:none;
@@ -285,17 +287,20 @@ a::after {
 	background-position: center;
 }
 
-
 footer .ossn-footer-menu a {
 	color: rgba(255, 255, 255, 0.75)!important;
-	margin:5px;
-	padding:5px;
+	margin-left:5px;
+	margin-right:5px;
+	padding-right:5px;
+	padding-left:5px;
 }
 
 .ossn-layout-startup footer .ossn-footer-menu a {
 	color: rgba(255, 255, 255, 0.75)!important;
-	margin:5px;
-	padding:5px;
+	margin-left:5px;
+	margin-right:5px;
+	padding-right:5px;
+	padding-left:5px;
 }
 .ossn-home-container {
 	margin-top: 100px;
@@ -415,10 +420,9 @@ footer .ossn-footer-menu a {
 	display: block;
 	font-weight: 700;
 	padding-top: 25px;
-	padding-right: 25px;
 	padding-bottom: 25px;
-	padding-left: 10px;
-	margin-left:-20px;
+	margin-left:auto;
+	margin-right:auto;
 	white-space: nowrap;
 }
 .topbar .site-name a:hover {
@@ -1118,12 +1122,23 @@ color:#fff;
 .ossn-widget {
 	box-shadow: 0px 5px 20px #111111;
 	margin-bottom: 20px;
-	background-color: rgba(0,0,0,.8);
+	background-color: #111;
 	border-radius: 10px;
 }
+
+
+.ossn-layout-startup .ossn-widget .widget-heading {
+	display:none;
+}
+
+.ossn-layout-startup .ossn-widget  {
+	background:rgba(0,0,0,.8)
+}
+
+
 .ossn-widget .widget-heading {
 	border-bottom: 0px solid #E5E5E5;
-	background-color: rgba(0,0,0,.7);
+	background-color:#171717;
 	text-align:center;
 	border: 0px solid #E9EAED;
 	padding: 10px;
@@ -1945,33 +1960,21 @@ Footer
 **********************************/
 
 footer {
-	margin-top: 20px;
-	padding-top: 5px;
+	margin-top: 100px;
+	padding-top: 30px;
 }
 
-<<<<<<< HEAD
 footer .col-md-12 {
 	border-top: 1px solid #E8E8E8;
 }
 
 footer .container {}
 
-footer .ossn-footer-menu {
-	padding-bottom: 10px;
-}
-
-=======
-footer .col-md-11 {
-	border-top: 1px solid #E8E8E8;
-}
-
-footer .container {}
 
 footer .ossn-footer-menu {
-	padding-bottom: 10px;
+	padding-bottom: 10px
 }
 
->>>>>>> 9f99ffce905c132a498e70348d7078363468913a
 footer .ossn-footer-menu a {
 	color: #807D7D;
 	font-size: 13px;
@@ -1985,11 +1988,7 @@ footer .ossn-footer-menu a::after {
 
 footer .ossn-footer-menu a:nth-last-child(2)::after,
 footer .ossn-footer-menu a:last-child::after {
-<<<<<<< HEAD
 	content: " ";
-=======
-	content: "";
->>>>>>> 9f99ffce905c132a498e70348d7078363468913a
 }
 
 .menu-footer-powered {

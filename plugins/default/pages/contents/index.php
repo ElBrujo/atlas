@@ -4,12 +4,23 @@
  */
 ?>
 
-	<div class="atlas-logo col-x-1 center-block"></div>
+<style>
+.topbar {
+	.col-x-1;
+}
+.topbar .site-name {
+width: 100%;
+text-align: center;
+}
+</style>
+
+<div class="atlas-logo col-x-1 center-block"></div>
+
 
 <div class="row ossn-page-contents">
-<div class="col-x-1 d-flex justify-content-center">
-		 <table class="atlas-table center-block">
-			
+<div class="col-m-12 center-block">
+		 <table class="atlas-table">
+
 			<td style="vertical-align: top;">
 	          	<?php
 				$contents = ossn_view_form('login2', array(
@@ -19,7 +30,7 @@
 				echo ossn_plugin_view('widget/view', array(
 							'title' => ossn_print('site:login'),
 							'contents' => $contents,
-				));	
+				));
 
 				?>
 
@@ -28,19 +39,19 @@
 				<td>
 
 				<?php
-				
+
 				$contents = ossn_view_form('signup', array(
 	        					'id' => 'ossn-home-signup',
 	        				'action' => ossn_site_url('action/user/register')
 		   	 	));
-				
+
 				echo ossn_plugin_view('widget/view', array(
 							'title' => ossn_print('create:account'),
 							'contents' => $contents,
 				));
 				?>
 
-			</td>	       			
-       </table>   		
-       </div>     
-   </div>	
+			</td>
+       </table>
+       </div>
+   </div>
