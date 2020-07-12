@@ -54,23 +54,40 @@ body {
 .ossn-layout-startup select,
 .ossn-layout-startup text,
 .ossn-layout-startup input[type='text'],
-.ossn-layout-startup focus,
+.ossn-layout-startup focus{
+background-color:#111111dd;
+background:#111111dd;
+color:#c5ff00;
+	width: -webkit-fill-available;
+	border: 1px dashed #555;
+	padding: 10px;
+	margin-left:-5px;
+	margin-rigth:-5px;
+	margin-bottom: 5px;
+	margin-top:5px;
+	outline: none;
+	display: block;
+	resize: vertical;
+	text-decoration:none;
+}
+
 .ossn-form input[type='password'],
 .ossn-form text,
 .ossn-form select,
 .ossn-form textarea,
 .ossn-form input[type='text'] {
-background-color:#111111dd;
-background:#111111dd;
-color:#c5ff00;
-	width: 100%;
-	border: 1px dashed #555;
-	padding: 10px;
-	margin-bottom: 5px;
-	outline: none;
-	display: block;
-	resize: vertical;
-	text-decoration:none;
+
+	background-color:#111111dd;
+	background:#111111dd;
+	color:#c5ff00;
+		width: 100%;
+		border: 1px dashed #555;
+		padding: 10px;
+		margin-bottom: 5px;
+		outline: none;
+		display: block;
+		resize: vertical;
+		text-decoration:none;
 }
 .ossn-form input[type='submit'] {
 	margin-top: 5px;
@@ -274,14 +291,14 @@ a::after {
 }
 .ossn-home-container,
 .ossn-layout-startup {
-	min-height: 200px;
+	min-height: 400px;
 }
 .ossn-home-container .ossn-page-contents {
 	background: rgba(255, 255, 255, 0);
 	border: 1px solid rgba(238, 238, 238, 0);
 }
 .ossn-layout-startup {
-	min-height: 600px;
+	min-height: 400px;
 	background:#333 url("<?php echo ossn_theme_url();?>images/infinite.svg") no-repeat;
 	background-size:1500px;
 	background-position: center;
@@ -993,7 +1010,7 @@ color:#fff;
 .sidebar-menu-nav li .sub-menu li {
 	line-height: 40px
 }
-@media (max-width: 768px)
+@media only screen and (max-width: 768px)
 {
 	.site-name{
 	}
@@ -1147,9 +1164,10 @@ color:#fff;
 	border-top-right-radius: 10px;
 }
 .ossn-widget .widget-contents {
-	padding: 10px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+	padding:10px;
+	margin:10px;
 }
 /***Ossn Notifications***/
 .ossn-notifications-box {
@@ -2132,7 +2150,8 @@ Photos
 Mobile Layout Settings
 ***************************/
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 485px) {
+
 /***********************
 Comments
 ***********************/
@@ -2303,8 +2322,7 @@ System
 
 }
 .ossn-widget .widget-contents {
-	padding: 5px;
-
+	padding: 10px;
 }
 .ossn-message-box {
 	min-width: 300px;
@@ -2485,7 +2503,7 @@ Tablets
 }
 @media only screen and (max-width: 1199px)
 {
-	.comments-list .comments-item .col-md-1,
+ 	.comments-list .comments-item .col-md-1,
 	.comments-list .comments-item .comment-user-img {
 		display: none;
 	}
@@ -2514,8 +2532,7 @@ Tablets
 		max-width: 640px;
 	}
 }
-@media only screen and (max-width: 767px)
-{
+@media (max-width: 767px)
 	.ossn-profile .user-fullname {
 		max-width: 767px;
 	}
@@ -2770,3 +2787,23 @@ Tooltip
 	max-width: 100%;
 	height: auto;
 }
+
+@media only screen and (max-width:500px){
+
+.mobile{
+		display:contents;
+	}
+.navegador{
+		display:none;
+	}
+}
+
+@media only screen and (min-width:501px){
+
+	.mobile{
+			display:none;
+		}
+	.navegador{
+			display:contents;
+		}
+	}
